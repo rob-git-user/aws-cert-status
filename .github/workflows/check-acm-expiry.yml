@@ -2,8 +2,8 @@ name: Check ACM Certificate Expiry
 
 on:
   schedule:
-    - cron: '0 8 * * *'  # Minden nap 08:00 UTC (pl. 9:00 CET)
-  workflow_dispatch:      # Manuális indítás lehetősége
+    - cron: '0 8 * * *'  # Run every day at 8am UTC
+  workflow_dispatch:      # Manual run
 
 jobs:
   check-expiry:
