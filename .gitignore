@@ -1,0 +1,3 @@
+// This file is used to ignore files which should not be pushed to the repository.
+// The following file conteins the ARN of the certificate to watch
+cert-arn.txt
