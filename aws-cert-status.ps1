@@ -22,4 +22,4 @@ do {
 
 } while ($status -ne "ISSUED")
 
-Write-Host "✅ Certificate is ISSUED -> Terraform apply! 🚀"
+Write-Host "✅ Certificate is ISSUED. Ready to proceed! 🚀"
