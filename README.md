@@ -16,9 +16,9 @@ Monitors the status of a single ACM certificate until it becomes `ISSUED`. Usefu
 ```txt
 cert-arn.txt
 arn:aws:acm:us-east-1:XXXXXXXXXXXX:certificate/abcde-1234-...
-----#
+```
 
-awscli-updater.sh
+### ✅ 'awscli-updater.sh'
 # AWS CLI v2 Auto-Updater for Linux (WSL/Ubuntu)
 
 This simple Bash script automatically checks for updates and installs the latest version of **AWS CLI v2** on Linux systems (e.g., Ubuntu or WSL2).
