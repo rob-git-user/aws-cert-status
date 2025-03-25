@@ -1,46 +1,50 @@
-# AWS Certificate Monitoring Scripts
+# AWS Toolkit
 
-This repository contains PowerShell and Bash utilities for monitoring AWS ACM (Amazon Certificate Manager) certificates — including issuance status, expiration tracking, and more.
+This repository contains useful **Bash** and **PowerShell** scripts to automate and simplify working with AWS services. It includes tools for AWS CLI updates, cost monitoring, and certificate status checks.
 
----
-
-## 🔍 Scripts Included
-
-### ✅ `watch-cert.ps1`
-Monitors the status of a single ACM certificate until it becomes `ISSUED`. Useful for setups with DNS validation (e.g. CloudFront + GoDaddy domains).
-
-#### Usage
-
-1. Store your ACM certificate ARN in a file:
-
-```txt
-cert-arn.txt
-arn:aws:acm:us-east-1:XXXXXXXXXXXX:certificate/abcde-1234-...
-```
-
-### ✅ `awscli-updater.sh`
-# AWS CLI v2 Auto-Updater for Linux (WSL/Ubuntu)
-
-This simple Bash script automatically checks for updates and installs the latest version of **AWS CLI v2** on Linux systems (e.g., Ubuntu or WSL2).
-
-> 💡 Ideal for keeping your AWS CLI up to date when it was installed via the official installer (not `apt`).
+> ✅ Ideal for DevOps, SecOps, or developers who manage AWS infrastructure regularly.
 
 ---
 
-## 📦 Features
+## 📁 Contents
 
-- ✅ Detects currently installed AWS CLI version
-- 🔍 Compares it with the latest available version
-- 🔄 Automatically updates if a newer version is found
-- 🧹 Cleans up after itself
-- 🕒 Can be scheduled with `cron` for automatic monthly updates
+- [Scripts](#scripts)
+  - [AWS CLI Auto-Updater](#aws-cli-auto-updater)
+  - [AWS Cost Monitoring](#aws-cost-monitoring)
+  - [Certificate Monitoring](#certificate-monitoring)
+- [Usage](#usage)
+- [Security](#security)
+- [Contributing](#contributing)
+- [License](#license)
 
 ---
 
-## 🛠️ Usage
+## 🧰 Scripts
 
-### 1. Clone or download this script
+### AWS CLI Auto-Updater
+
+- `awscli-updater.sh`: Automatically checks and installs the latest version of the AWS CLI v2 on Linux/WSL systems. Can be scheduled via `cron`.
+
+---
+
+### AWS Cost Monitoring
+
+- `aws-cost-actual.sh`: Retrieves your **actual AWS costs** for the current month using AWS Cost Explorer.
+- `aws-cost-forecast.sh`: Displays a **forecast of expected monthly AWS costs** based on current usage trends.
+
+---
+
+### Certificate Monitoring
+
+- `aws-cert-status.sh` / `aws-cert-status.ps1`: Checks the status of ACM (AWS Certificate Manager) certificates — useful for DNS validation monitoring.
+- `check-expiry.sh` / `check-expiry.ps1`: Lists certificate expiration dates and alerts for those expiring soon.
+
+---
+
+## 🚀 Usage
+
+### 1. Clone the Repository
 
 ```bash
-curl -O https://raw.githubusercontent.com/rob-git-user/awscli-updater/main/awscli-updater.sh
-chmod +x awscli-updater.sh
+git clone https://github.com/rob-git-user/aws-toolkit.git
+cd aws-toolkit
