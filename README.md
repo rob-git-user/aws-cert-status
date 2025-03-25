@@ -42,5 +42,5 @@ This simple Bash script automatically checks for updates and installs the latest
 ### 1. Clone or download this script
 
 ```bash
-curl -O https://raw.githubusercontent.com/YOUR_USERNAME/awscli-updater/main/awscli-updater.sh
+curl -O https://raw.githubusercontent.com/rob-git-user/awscli-updater/main/awscli-updater.sh
 chmod +x awscli-updater.sh
