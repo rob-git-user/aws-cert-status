@@ -48,3 +48,53 @@ This repository contains useful **Bash** and **PowerShell** scripts to automate 
 ```bash
 git clone https://github.com/rob-git-user/aws-toolkit.git
 cd aws-toolkit
+```
+### 2. Make Scripts Executable (Linux/macOS/WSL)
+`chmod +x *.sh`
+
+### 3. Run the Scripts
+Examples:
+
+Update AWS CLI:
+`./awscli-updater.sh`
+
+Check actual monthly AWS costs:
+`./aws-cost-actual.sh`
+
+Get monthly AWS cost forecast:
+`./aws-cost-forecast.sh`
+
+Monitor ACM certificate status:
+`./aws-cert-status.sh`
+
+Check certificate expiry:
+`./check-expiry.sh`
+
+⚙️ PowerShell scripts are for Windows users (.ps1), and require AWS.Tools or AWSPowerShell modules.
+
+## 🔒 Security
+Please review the SECURITY.md file for information about security practices, disclosures, and safe usage of the tools in this repository.
+
+## 🤝 Contributing
+Pull requests are welcome!
+
+To contribute:
+
+Fork the repository
+
+Create a new feature branch (git checkout -b feature/my-feature)
+
+Commit your changes (git commit -am 'Add new feature')
+
+Push the branch (git push origin feature/my-feature)
+
+Open a Pull Request on GitHub
+
+## 📄 License
+This project is licensed under the MIT License.
+
+Use freely and modify responsibly. 😎
+
+## 📬 Contact
+Maintained by rob-git-user.
+Feel free to open issues or suggestions via GitHub Issues.
