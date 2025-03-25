@@ -25,14 +25,10 @@ This repository contains useful **Bash** and **PowerShell** scripts to automate 
 
 - `awscli-updater.sh`: Automatically checks and installs the latest version of the AWS CLI v2 on Linux/WSL systems. Can be scheduled via `cron`.
 
----
-
 ### AWS Cost Monitoring
 
 - `aws-cost-actual.sh`: Retrieves your **actual AWS costs** for the current month using AWS Cost Explorer.
 - `aws-cost-forecast.sh`: Displays a **forecast of expected monthly AWS costs** based on current usage trends.
-
----
 
 ### Certificate Monitoring
 
@@ -43,58 +39,92 @@ This repository contains useful **Bash** and **PowerShell** scripts to automate 
 
 ## 🚀 Usage
 
-### 1. Clone the Repository
+### 1. Make Scripts Executable (Linux/macOS/WSL)
 
-```bash
-git clone https://github.com/rob-git-user/aws-toolkit.git
-cd aws-toolkit
-```
-### 2. Make Scripts Executable (Linux/macOS/WSL)
-`chmod +x *.sh`
+    ```bash
+    chmod +x *.sh
+    ```
 
-### 3. Run the Scripts
-Examples:
+### 2. Run the Scripts
 
-Update AWS CLI:
-`./awscli-updater.sh`
+**Update AWS CLI:**
 
-Check actual monthly AWS costs:
-`./aws-cost-actual.sh`
+    ```bash
+    ./awscli-updater.sh
+    ```
 
-Get monthly AWS cost forecast:
-`./aws-cost-forecast.sh`
+**Check actual monthly AWS costs:**
 
-Monitor ACM certificate status:
-`./aws-cert-status.sh`
+    ```bash
+    ./aws-cost-actual.sh
+    ```
 
-Check certificate expiry:
-`./check-expiry.sh`
+**Get monthly AWS cost forecast:**
 
-⚙️ PowerShell scripts are for Windows users (.ps1), and require AWS.Tools or AWSPowerShell modules.
+    ```bash
+    ./aws-cost-forecast.sh
+    ```
+
+**Monitor ACM certificate status:**
+
+    ```bash
+    ./aws-cert-status.sh
+    ```
+
+**Check certificate expiry:**
+
+    ```bash
+    ./check-expiry.sh
+    ```
+
+> ⚙️ PowerShell scripts (`*.ps1`) are designed for Windows users and require `AWS.Tools` or `AWSPowerShell` modules.
+
+---
 
 ## 🔒 Security
-Please review the SECURITY.md file for information about security practices, disclosures, and safe usage of the tools in this repository.
+
+Please review the [SECURITY.md](SECURITY.md) file for information about security practices, disclosures, and safe usage of the tools in this repository.
+
+---
 
 ## 🤝 Contributing
+
 Pull requests are welcome!
 
 To contribute:
 
-Fork the repository
+1. Fork the repository
 
-Create a new feature branch (git checkout -b feature/my-feature)
+2. Create a new feature branch:
 
-Commit your changes (git commit -am 'Add new feature')
+    ```bash
+    git checkout -b feature/my-feature
+    ```
 
-Push the branch (git push origin feature/my-feature)
+3. Commit your changes:
 
-Open a Pull Request on GitHub
+    ```bash
+    git commit -am "Add new feature"
+    ```
+
+4. Push the branch:
+
+    ```bash
+    git push origin feature/my-feature
+    ```
+
+5. Open a Pull Request
+
+---
 
 ## 📄 License
-This project is licensed under the MIT License.
 
+This project is licensed under the [MIT License](LICENSE).  
 Use freely and modify responsibly. 😎
 
+---
+
 ## 📬 Contact
-Maintained by rob-git-user.
-Feel free to open issues or suggestions via GitHub Issues.
+
+Maintained by [rob-git-user](https://github.com/rob-git-user)  
+Feel free to open [issues](https://github.com/rob-git-user/aws-toolkit/issues) for bugs, feature requests, or questions.
